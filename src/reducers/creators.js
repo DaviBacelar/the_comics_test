@@ -1,6 +1,6 @@
-const data = (state = false, action) => {
+const creators = (state = false, action) => {
     switch (action.type) {
-        case "DATA":
+        case "CREATORS":
             return action.payload;
             break;
         default:
@@ -9,4 +9,4 @@ const data = (state = false, action) => {
     }
 }
 
-export default data
+export default creators

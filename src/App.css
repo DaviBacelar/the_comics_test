@@ -1,23 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+html, html * {
+  font-family: 'Marvel', sans-serif;
+}
+
 body, html, #root {
-  background-color: #ececec;
+  background-color: #F0131E;
+}
+
+.page-background {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.marvel-logo {
+  width: 400px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 928px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.navbar .marvel-logo {
+  width: 100px;
+}
+
+.navbar .menu a {
+  font-size: 20px;
 }
 
 .grid {
   display: flex;
-  background-color: #ececec;
-  max-width: 100vw;
+  width: 90%;
+  max-width: 968px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
 .grid-item {
   position: relative;
   width: 200px;
   background-color: #ffffff;
-  margin: 10px;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  margin: 10px 10px 0 0;
 }
 
 .grid-item .item-title {
@@ -35,7 +86,8 @@ body, html, #root {
   margin: 50px;
   padding: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.item-container h4, .item-container h6, .item-container p {
+  margin-bottom: 0;
 }

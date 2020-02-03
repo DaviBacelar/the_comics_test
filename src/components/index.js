@@ -1,33 +1,24 @@
 import React, { useState } from 'react'
-import Axios from 'axios'
-import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom'
+import logo from '../marvel-logo.png';
 
 const Index = () => {
-    const data = useSelector(state => state.data)
-
-    const grid = () => {
-        let itens = []
-    
-        if(data) {
-            data.map((item, index) => {
-                itens.push(                    
-                    <div className="grid-item">
-                        <Link to={`/item?item=${index}`}>                           
-                            <img src={`${item.thumbnail.path}/standard_xlarge.jpg`} />
-                            <div className="item-title">{item.title}</div>
-                        </Link>
-                    </div>                    
-                )
-            })
-        }
-
-        return itens
-    }
-
     return (
-        <div className="grid">
-            {grid()}
+        <div className="page-background">
+            <div>
+                <div>
+                    <img className="marvel-logo" src={logo} />
+                </div>
+                <div className="menu">
+                    <Link to="/comics"><a>Comics</a></Link>
+                    <Link to="/characters"><a>Characters</a></Link>
+                    <Link to="/creators"><a>Creators</a></Link>
+                    <Link to="/events"><a>Events</a></Link>
+                    {/* <Link to="/comics"><a>Series</a></Link>
+                    <Link to="/comics"><a>Stories</a></Link> */}
+                </div>
+            </div>
+            
         </div>
     )
 }
