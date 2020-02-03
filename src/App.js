@@ -61,7 +61,7 @@ function App() {
     Axios.get(`http://gateway.marvel.com/v1/public/events?${filters.events ? filters.eventsy : ""}ts=1&apikey=2fc90cdd040a3c4cc0318977ecab8684&hash=5e3d141ca033881b19d05e43321b8952`)
     .then(res => {
         console.log(res)
-        dispatch(creatorsAction(res.data.data.results))
+        dispatch(eventsAction(res.data.data.results))
     })
     .catch(err => {
       console.log(err)
