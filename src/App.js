@@ -3,7 +3,7 @@ import Axios from 'axios'
 import './App.css';
 import './foundation.min.css'
 import { useSelector, useDispatch } from 'react-redux';
-import { comicsAction, charactersAction, creatorsAction, filtersAction } from './actions'
+import { comicsAction, charactersAction, creatorsAction, eventsAction } from './actions'
 import Index from './components/index'
 import ComicsItem from './components/comicsItem'
 import Comics from './components/comics'
