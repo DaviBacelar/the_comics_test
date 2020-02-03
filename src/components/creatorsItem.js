@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux';
 
-const Index = (props) => {
+const CreatorsItem = (props) => {
     const creators = useSelector(state => state.creators)
     const item = creators[props.location.search.split("=")[1]]
 
@@ -21,4 +21,4 @@ const Index = (props) => {
     )
 }
 
-export default Index
+export default CreatorsItem

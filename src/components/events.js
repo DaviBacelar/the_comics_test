@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom'
 import Navbar from './navbar'
 
-const Index = () => {
+const Events = () => {
     const events = useSelector(state => state.events)
 
     const grid = () => {
@@ -35,4 +35,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Events

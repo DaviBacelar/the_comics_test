@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux';
 
-const Index = (props) => {
+const EventsItem = (props) => {
     const events = useSelector(state => state.events)
     const item = events[props.location.search.split("=")[1]]
  
@@ -72,4 +72,4 @@ const Index = (props) => {
     )
 }
 
-export default Index
+export default EventsItem

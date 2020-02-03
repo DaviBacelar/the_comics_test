@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux';
 
-const Index = (props) => {
+const ComicsItem = (props) => {
     const comics = useSelector(state => state.comics)
     const item = comics[props.location.search.split("=")[1]]
  
@@ -72,4 +72,4 @@ const Index = (props) => {
     )
 }
 
-export default Index
+export default ComicsItem
