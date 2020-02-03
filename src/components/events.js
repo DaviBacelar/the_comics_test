@@ -15,7 +15,7 @@ const Index = () => {
                     <div className="grid-item">
                         <Link to={`/events/item?item=${index}`}>                           
                             <img src={`${item.thumbnail.path}/standard_xlarge.jpg`} />
-                            <div className="item-title">{item.name}</div>
+                            <div className="item-title">{item.title}</div>
                         </Link>
                     </div>                    
                 )

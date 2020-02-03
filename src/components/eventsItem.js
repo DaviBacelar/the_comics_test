@@ -3,8 +3,8 @@ import Axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux';
 
 const Index = (props) => {
-    const comics = useSelector(state => state.comics)
-    const item = comics[props.location.search.split("=")[1]]
+    const events = useSelector(state => state.events)
+    const item = events[props.location.search.split("=")[1]]
  
     const creators = () => {
         let itens = []
